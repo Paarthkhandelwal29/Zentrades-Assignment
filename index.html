@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Routing Web API</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
+    <!-- Mapbox Geocode -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.min.js'></script>
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.css' type='text/css'/>
+  </head>
+  <body>
+    <section id="container">
+    <div id="map"></div>
+    </section>
+    <div id="controls">
+      <input class="form_input" type="text" id="jobLocation" placeholder="Enter job location" />
+      <button class="button-84" onclick="addJobLocation()">Add Job Location</button>
+      <input class="form_input" type="text" id="technicianLocation" placeholder="Enter technician location"/>
+      <button type="button" class="button-84" onclick="planRoute()">Plan Route</button>
+    </div>
+    <ul id="autocompleteList"></ul>
+    <!-- Autocomplete suggestions list for job location -->
+    <ul id="technicianAutocompleteList"></ul>
+    <!-- Autocomplete suggestions list for technician location -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
